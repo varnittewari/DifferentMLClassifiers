@@ -15,5 +15,12 @@ y= data['Species']
 #Split the Data into Training and Testing sets with test size as #30%
 X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.3, shuffle=True)
 
-
+model1 = xgboost.XGBClassifier()
+classifiers.append(model1)
+model2 = svm.SVC()
+classifiers.append(model2)
+model3 = tree.DecisionTreeClassifier()
+classifiers.append(model3)
+model4 = RandomForestClassifier()
+classifiers.append(model4)
 
