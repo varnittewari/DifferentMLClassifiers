@@ -7,7 +7,7 @@ from sklearn import svm, tree
 import xgboost
 from sklearn.model_selection import train_test_split
 
-data  =  pd.read_csv("D://Blogs//Iris Multiple Algo//Iris.csv")
+data  =  pd.read_csv("Iris.csv")
 #Create Dependent and Independent Datasets based on our Dependent #and Independent features
 X  = data[['SepalLengthCm','SepalWidthCm','PetalLengthCm']]
 y= data['Species']
